@@ -5,6 +5,3 @@ Feature: test sample api
     And user send http request with the following details
       |name|cpuModel|
       |Apple MacBook Pro 16|Intel Core i9|
-    Given user provide the following details
-    |name|cpuModel|
-    |Apple MacBook Pro 16|Intel Core i9|

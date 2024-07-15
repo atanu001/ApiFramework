@@ -1,19 +1,12 @@
 package testRunner;
 
-import apiAutomation.utility.ExtentReportUtil;
 import io.cucumber.junit.Cucumber;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/java/apiAutomation/features", glue = { "apiAutomation.stepDefinition","apiAutomation.hooks"}, plugin = { "json:target/cucumber.json", "pretty", "html:target/cucumber.html", "apiAutomation.utility.ExtentReportPlugin" }, monochrome = true, publish = true)
+@CucumberOptions(features = "src/test/java/apiAutomation/features", glue = { "apiAutomation.stepDefinition","apiAutomation.hooks"}, plugin =  {"pretty","html:target/cucumber-reports.html", "json:target/jsonReports/cucumber-report.json" })
 public class junitRunner {
-    @AfterClass
-    public static void teardown() {
-        // Flush Extent Reports after all tests are finished
-        ExtentReportUtil.flushReport();
-    }
+
 }

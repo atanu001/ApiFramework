@@ -11,7 +11,7 @@ public class FileHelper {
 
     public static Properties prop;
 
-    /*public Properties init_prop(){
+    public static Properties init_prop(){
         prop = new Properties();
 
         try{
@@ -21,9 +21,9 @@ public class FileHelper {
             throw new RuntimeException("File not found " + e);
         }
         return prop;
-    }*/
+    }
 
-    public static void loadProperties() {
+   /* public static void loadProperties() {
         prop = new Properties();
         try (InputStream input = FileHelper.class.getClassLoader().getResourceAsStream(Constants.propertyFilePath)) {
             if (input == null) {
@@ -35,10 +35,10 @@ public class FileHelper {
             ex.printStackTrace();
         }
     }
-
+*/
     public static String getProperty(String key) {
         if (prop == null) {
-            loadProperties();
+            init_prop();
         }
         return prop.getProperty(key);
     }
