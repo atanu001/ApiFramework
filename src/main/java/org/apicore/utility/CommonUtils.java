@@ -1,4 +1,4 @@
-package apiAutomation.utility;
+package org.apicore.utility;
 
 import java.util.HashMap;
 import java.util.Map;

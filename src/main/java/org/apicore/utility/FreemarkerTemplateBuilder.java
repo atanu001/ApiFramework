@@ -1,12 +1,10 @@
-package apiAutomation.utility;
+package org.apicore.utility;
 
 import freemarker.cache.FileTemplateLoader;
 
 import freemarker.template.Configuration;
 
 import freemarker.template.Template;
-
-import io.cucumber.core.options.Constants;
 
 
 import java.io.IOException;

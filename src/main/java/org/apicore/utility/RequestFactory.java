@@ -1,4 +1,4 @@
-package apiAutomation.utility;
+package org.apicore.utility;
 
 
 import io.restassured.specification.RequestSpecification;
