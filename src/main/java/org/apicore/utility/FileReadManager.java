@@ -1,4 +1,4 @@
-package apiAutomation.utility;
+package org.apicore.utility;
 
 public class FileReadManager {
 
