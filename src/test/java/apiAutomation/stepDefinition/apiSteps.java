@@ -1,7 +1,7 @@
 package apiAutomation.stepDefinition;
 
 
-import apiAutomation.utility.*;
+
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
